@@ -63,6 +63,17 @@ const GlobalStyle = createGlobalStyle`
     --layout-contents-contents: clamp(40px, 3.65vw, 70px); /* 390px일 때 40px, 1920px일 때 70px */
     --layout-body-footer: clamp(64px, 4.17vw, 80px);     /* 390px일 때 64px, 1920px일 때 80px */
 
+    /* breakpoint */
+    --breakpoint-mobileUp: 360px;  /* min-width: 최소 모바일 화면 */
+    --breakpoint-mobile: 390px; /* 모바일: 360px~600px 대표: 390px*/
+    --breakpoint-mobileDown: 600px;  /* max-width: 최대 모바일 화면 */
+
+    --breakpoint-tabletUp: 601px;  /* min-width: 최소 태블릿 화면 */
+    --breakpoint-tablet: 768px; /* 태블릿: 601px~1024px 대표: 768px*/
+    --breakpoint-tabletDown: 1024px; /* max-width: 최대 태블릿 화면 */
+
+    --breakpoint-desktopUp: 1025px; /* min-width: 최소 데스크탑 화면 */
+    --breakpoint-desktop: 1920px; /* 데스크탑: 1025px~1920px 대표&최대 화면: 1920px*/
    /* Display */
    /* 한 눈에 가장 큰 텍스트 */
     --display-large-size: 120px;
@@ -177,7 +188,7 @@ const GlobalStyle = createGlobalStyle`
     --links-small-mobile: 15px;
     --links-small-weight: 400;
 
-    /* Common */
+    /* text common */
     /* 행간, 자간 */
     --m-line-height: 150%; /* Mobile (13~14px 대표 기준) Line Height */
     --pc-l-line-height: 130%; /* PC Large(40px 이상일때) Line Height */
