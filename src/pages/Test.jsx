@@ -1,12 +1,9 @@
-import Button from '../components/elements/Button/button';
-import { Container } from '../layouts/style';
+import AboutP from './about/aboutP';
 
 const Test = () => {
     return (
         <>
-            <Container>
-                <Button>버튼</Button>
-            </Container>
+            <AboutP></AboutP>
         </>
     );
 };

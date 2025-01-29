@@ -8,4 +8,5 @@ export const ButtonB = styled.button`
     color: ${(props) => (props.type === 'disabled' ? 'var(--gray-500)' : 'var(--black)')};
     font-size: 1.5rem;
     font-weight: 900;
+    padding: 17px 23px;
 `;
