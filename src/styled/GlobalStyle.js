@@ -2,6 +2,149 @@ import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 
 const GlobalStyle = createGlobalStyle`
+ :root {
+   /* Spacing System */
+   --spacing-0: 0px;
+   --spacing-1: 2px;
+   --spacing-2: 4px;
+   --spacing-3: 8px;
+   --spacing-4: 12px;
+   --spacing-5: 16px;
+   --spacing-6: 20px;
+   --spacing-7: 24px;
+   --spacing-8: 32px;
+   --spacing-9: 40px;
+   --spacing-10: 48px;
+
+  /* Layout Spacing System */
+   --layout-gnb-body: clamp(64px, 3.33vw, 50px);        /* 390px일 때 64px, 1920px일 때 50px */
+   --layout-titleCont-title: clamp(0px, 2.08vw, 40px);      /* 390px일 때 0px, 1920px일 때 40px */
+   --layout-titleCont-contents: clamp(64px, 3.33vw, 64px);  /* 390px일 때 64px, 1920px일 때 64px */
+   --layout-contents-contents: clamp(40px, 3.65vw, 70px); /* 390px일 때 40px, 1920px일 때 70px */
+   --layout-body-footer: clamp(64px, 4.17vw, 80px);     /* 390px일 때 64px, 1920px일 때 80px */
+
+   /* Display */
+   /* 한 눈에 가장 큰 텍스트 */
+   --display-large-size: 120px;
+    --display-large-mobile: 65px;
+    --display-large-weight: 700;
+    
+    --display-medium-size: 80px;
+    --display-medium-mobile: 35px;
+    --display-medium-weight: 800;
+    
+    --display-small-size: 40px;
+    --display-small-mobile: 25px;
+    --display-small-weight: 700;
+
+    /* Heading */
+    /* 페이지 섹션 타이틀에 사용 */
+    --heading-large-size: 48px;
+    --heading-large-mobile: 48px;
+    --heading-large-weight: 800;
+    
+    --heading-medium-size: 40px;
+    --heading-medium-mobile: 32px;
+    --heading-medium-weight: 700;
+    
+    --heading-small-size: 32px;
+    --heading-small-mobile: 25px;
+    --heading-small-weight: 700;
+
+    /* Title */
+    /* 텍스트 단위, 모듈 단위의 작은 제목 사용 */
+    --title-xxlarge-size: 60px;
+    --title-xxlarge-mobile: 48px;
+    --title-xxlarge-weight: 700;
+    
+    --title-xlarge-size: 32px;
+    --title-xlarge-mobile: 32px;
+    --title-xlarge-weight: 800;
+    
+    --title-large-size: 28px;
+    --title-large-mobile: 24px;
+    --title-large-weight: 700;
+    
+    --title-medium-size: 20px;
+    --title-medium-mobile: 20px;
+    --title-medium-weight: 700;
+    
+    --title-small-size: 17px;
+    --title-small-mobile: 17px;
+    --title-small-weight: 800;
+    
+    --title-xsmall-size: 15px;
+    --title-xsmall-mobile: 15px;
+    --title-xsmall-weight: 700;
+
+    /* Body */
+    /* 본문 텍스트로 사용 */
+    --body-large-size: 28px;
+    --body-large-mobile: 19px;
+    --body-large-weight: 400;
+    
+    --body-medium-size: 17px;
+    --body-medium-mobile: 17px;
+    --body-medium-weight: 400;
+    
+    --body-small-size: 15px;
+    --body-small-mobile: 15px;
+    --body-small-weight: 400;
+
+    /* Detail */
+    /* 추가 보충 또는 작은 알림 텍스트 사용 */
+    --detail-large-size: 17px;
+    --detail-large-mobile: 17px;
+    --detail-large-weight: 400;
+    
+    --detail-medium-size: 15px;
+    --detail-medium-mobile: 15px;
+    --detail-medium-weight: 400;
+    
+    --detail-small-size: 13px;
+    --detail-small-mobile: 13px;
+    --detail-small-weight: 400;
+
+    /* Label */
+    /* 구성 요소 내부에서 텍스트로 사용 */
+    --label-large-size: 19px;
+    --label-large-mobile: 19px;
+    --label-large-weight: 400;
+    
+    --label-medium-size: 17px;
+    --label-medium-mobile: 17px;
+    --label-medium-weight: 400;
+    
+    --label-small-size: 15px;
+    --label-small-mobile: 15px;
+    --label-small-weight: 400;
+    
+    --label-xsmall-size: 13px;
+    --label-xsmall-mobile: 13px;
+    --label-xsmall-weight: 400;
+
+    /* Links */
+    /* 링크나 컴포넌트 영역의 텍스트로 사용 */
+    --links-large-size: 19px;
+    --links-large-mobile: 19px;
+    --links-large-weight: 400;
+    
+    --links-medium-size: 17px;
+    --links-medium-mobile: 17px;
+    --links-medium-weight: 400;
+    
+    --links-small-size: 15px;
+    --links-small-mobile: 15px;
+    --links-small-weight: 400;
+
+    /* Common */
+    /* 행간, 자간 */
+    --m-line-height: 150%; /* Mobile (13~14px 대표 기준) Line Height */
+    --pc-l-line-height: 130%; /* PC Large(40px 이상일때) Line Height */
+    --pc-n-line-height: 160%; /* PC Normal(15~16px 기준) Line Height */
+    --letter-spacing-default: 1px;
+    --letter-spacing-none: 0;
+ }
   ${reset}
   /* reset */
   body,
