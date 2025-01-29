@@ -293,9 +293,9 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-size: 16px;
-    line-height: 1.6;
-    font-family: 'Noto Sans KR', sans-serif;
-    color: #333;
+    line-height: 1.5;
+    color: var(--white);
+    background-color: var(--gray-900);
     -webkit-text-size-adjust: none;
   }
 
