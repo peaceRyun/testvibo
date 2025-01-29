@@ -3,29 +3,69 @@ import reset from 'styled-reset';
 
 const GlobalStyle = createGlobalStyle`
  :root {
+    /* Primary Colors */
+    --primary-base: #07FFE6;
+    --primary-100: #D9FCFA;
+    --primary-200: #B3FAF5;
+    --primary-300: #8EF7F0;
+    --primary-400: #68F5EB;
+    --primary-600: #06DBBF;
+    --primary-700: #04998A;
+    --primary-800: #02665C;
+    --primary-900: #01322D;
+    
+    /* Secondary Colors */
+    --secondary-base: #009C8C;
+    --secondary-100: #E6F5F4;
+    --secondary-200: #CCEBE8;
+    --secondary-300: #B2E1DC;
+    --secondary-400: #66C4BA;
+    --secondary-600: #007D70;
+    --secondary-700: #005E54;
+    --secondary-800: #003E38;
+    --secondary-900: #001F1C;
+
+    /* Grayscale */
+    --gray-100: #E6E7E9;
+    --gray-200: #D1D2D4;
+    --gray-300: #BCBDC0;
+    --gray-400: #A8A9AD;
+    --gray-500: #939598;
+    --gray-600: #6C6D70;
+    --gray-700: #57585A;
+    --gray-800: #3E3E3F;
+    --gray-900: #191919;
+
+    /* 색깔 극단값 */
+    --white: #ffffff;
+    --black: #000000;
+
+    /* Color contrast ratios */
+    --contrast-normal: 3.1;     /* 3:1 with white */
+    --contrast-high: 4.5;       /* 4.5:1 with white */
    /* Spacing System */
-   --spacing-0: 0px;
-   --spacing-1: 2px;
-   --spacing-2: 4px;
-   --spacing-3: 8px;
-   --spacing-4: 12px;
-   --spacing-5: 16px;
-   --spacing-6: 20px;
-   --spacing-7: 24px;
-   --spacing-8: 32px;
-   --spacing-9: 40px;
-   --spacing-10: 48px;
+    --spacing-0: 0px;
+    --spacing-1: 2px;
+    --spacing-2: 4px;
+    --spacing-3: 8px;
+    --spacing-4: 12px;
+    --spacing-5: 16px;
+    --spacing-6: 20px;
+    --spacing-7: 24px;
+    --spacing-8: 32px;
+    --spacing-9: 40px;
+    --spacing-10: 48px;
 
   /* Layout Spacing System */
-   --layout-gnb-body: clamp(64px, 3.33vw, 50px);        /* 390px일 때 64px, 1920px일 때 50px */
-   --layout-titleCont-title: clamp(0px, 2.08vw, 40px);      /* 390px일 때 0px, 1920px일 때 40px */
-   --layout-titleCont-contents: clamp(64px, 3.33vw, 64px);  /* 390px일 때 64px, 1920px일 때 64px */
-   --layout-contents-contents: clamp(40px, 3.65vw, 70px); /* 390px일 때 40px, 1920px일 때 70px */
-   --layout-body-footer: clamp(64px, 4.17vw, 80px);     /* 390px일 때 64px, 1920px일 때 80px */
+    --layout-gnb-body: clamp(64px, 3.33vw, 50px);        /* 390px일 때 64px, 1920px일 때 50px */
+    --layout-titleCont-title: clamp(0px, 2.08vw, 40px);      /* 390px일 때 0px, 1920px일 때 40px */
+    --layout-titleCont-contents: clamp(64px, 3.33vw, 64px);  /* 390px일 때 64px, 1920px일 때 64px */
+    --layout-contents-contents: clamp(40px, 3.65vw, 70px); /* 390px일 때 40px, 1920px일 때 70px */
+    --layout-body-footer: clamp(64px, 4.17vw, 80px);     /* 390px일 때 64px, 1920px일 때 80px */
 
    /* Display */
    /* 한 눈에 가장 큰 텍스트 */
-   --display-large-size: 120px;
+    --display-large-size: 120px;
     --display-large-mobile: 65px;
     --display-large-weight: 700;
     
